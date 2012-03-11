@@ -64,11 +64,11 @@
                 note, key, code, pressed = {};
 
             // Click
-            this._el.find('.key').on('mousedown',function(e){
+            this._el.find('.key').on('mousedown touchstart',function(e){
                 e.preventDefault();
                 note = $(this).attr('rel');
                 noteDown.call(self,note);
-            }).on('mouseup',function(e){
+            }).on('mouseup touchend',function(e){
                 e.preventDefault();
                 note = $(this).attr('rel');
                 noteUp.call(self,note);

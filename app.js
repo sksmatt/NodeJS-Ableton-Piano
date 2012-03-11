@@ -36,7 +36,7 @@ app.get('/', routes.index);
 // Functions
 
 var midi = require('midi'),
-    midiIn = new midi.input(),
+    //midiIn = new midi.input(),
     midiOut = new midi.output();
 
 try {
