@@ -36,7 +36,8 @@ app.get('/', routes.index);
 // Functions
 
 var midi = require('midi'),
-	midiOut = new midi.output();
+    midiIn = new midi.input(),
+    midiOut = new midi.output();
 
 try {
   midiOut.openPort(0);
@@ -49,18 +50,19 @@ io.sockets.on('connection', function (socket) {
   // note
   socket.on('notedown',function(data){
     midiOut.sendMessage([144,data.message,100]);
-    socket.broadcast.emit('played',{'message':data.message});
+    socket.broadcast.emit('playeddown',{'message':data.message});
   });
 
   // note stop
   socket.on('noteup',function(data){
     midiOut.sendMessage([128,data.message,100]);
+    socket.broadcast.emit('playedup',{'message':data.message});
   });
 
   // controller
   socket.on('controller',function(data){
-		var message = parseInt(data.message,10);
-		midiOut.sendMessage([message,0,0]);
+    var message = parseInt(data.message,10);
+    midiOut.sendMessage([message,0,0]);
   });
 
 });
@@ -68,7 +70,7 @@ io.sockets.on('connection', function (socket) {
 // Stop
 
 process.on("SIGTERM", function(){
-	midiOut.closePort();
+  midiOut.closePort();
 });
 
 // Start

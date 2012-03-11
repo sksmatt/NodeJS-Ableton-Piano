@@ -233,139 +233,139 @@ table{
  -------------------------------------------------------------- */
 
 body {
-	background:#333;
-	color:#f4f4f4;
+    background:#333;
+    color:#f4f4f4;
 }
 
 a,a:visited {
-	color:gold;
+    color:gold;
 }
 
 #container {
-	max-width:660px;
-	min-width:200px;
-	padding:30px 20px;
-	margin:0 auto;
+    width:100%;
+    max-width:660px;
+    min-width:200px;
+    padding:30px 20px;
+    margin:0 auto;
 }
 
 #controller {
-	display: none;
+    display: none;
 }
 
 #container ul {
-	list-style:none;
-	overflow: hidden;
-	clear:both;
+    list-style:none;
+    overflow: hidden;
+    clear:both;
 }
 
 #controller li:last-child {
-	margin-right:0
+    margin-right:0
 }
 
 .button {
-	width:200px;
-	height:200px;
-	float:left;
-	margin-right:30px;
+    width:200px;
+    height:200px;
+    float:left;
+    margin-right:30px;
 }
 
 .button a {
-	float:left;
-	display:block;
-	color:white;
-	width:100%;
-	height:100%;
-	text-decoration:none;
-	display: inline-table;	
-	text-align:center;	
-	background:darkgoldenrod;
+    float:left;
+    display:block;
+    color:white;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+    display: inline-table;  
+    text-align:center;  
+    background:darkgoldenrod;
 }
 
 .button a#record {
-	background:brown;
+    background:brown;
 }
 
 .button span {
-	display: table-cell;
-	vertical-align:middle;
-	text-align:center;	
+    display: table-cell;
+    vertical-align:middle;
+    text-align:center;  
 }
 
 .button a:hover {
-	font-weight:bold;
-	background: goldenrod;
+    font-weight:bold;
+    background: goldenrod;
 }
 
 .button a:active {
-	font-weight:bold;
-	background: lightgreen;
+    font-weight:bold;
+    background: lightgreen;
 }
 
 .button.active {
-	font-weight:bold;
-	background: green;
+    font-weight:bold;
+    background: green;
 }
 
 
 small {
-	margin-top:30px;
-	clear:both;
-	display: block;
+    margin-top:30px;
+    clear:both;
+    display: block;
 }
 
 /* =Keyboard
 -------------------------------------------------------------- */
 
-#piano {
-	width:100%;
-	clear:both;
-	overflow:hidden;
-	height:324px;
-	background:#222;
-	margin-top:30px;
-	position: relative;
-	cursor: pointer;
-	box-shadow:0 2px 3px rgba(0,0,0,0.3);
+#keyboard {
+    width:100%;
+    clear:both;
+    overflow:hidden;
+    height:324px;
+    margin-top:30px;
+    position: relative;
+    cursor: pointer;
+    box-shadow:0 2px 3px rgba(0,0,0,0.3);
 }
 
 .key {
-	width:14.090909090909%;
-	height:100%;
-	float:left;
-	background:white;
-	margin-right:0.151515151515%;
-	box-shadow:0 2px 3px rgba(0,0,0,0.3);
+    width:14.090909090909%;
+    height:100%;
+    float:left;
+    background:white;
+    margin-right:0.151515151515%;
+    box-shadow:0 2px 3px rgba(0,0,0,0.3);
 }
 
-.key:active {
-	background:brown;
+.key:active,.key.active {
+    background:brown;
 }
 
 .sharp {
-	background:black;
-	position: absolute;
-	height:70%;
-	width:9.090909090909%;
-	border:1px solid black;
-	border-top:none;
+    background:black;
+    position: absolute;
+    height:70%;
+    width:9.090909090909%;
+    border:1px solid black;
+    border-top:none;
 }
 
 .key.Cs {
-	left:9.69696969697%;
+    left:9.69696969697%;
 }
 
 .key.Ds {
-	left:24.242424242424%;
+    left:24.242424242424%;
 }
 
 .key.Fs {
-	left:52.333333333333%;
+    left:52.333333333333%;
 }
 
 .key.Gs {
-	left:66.878787878788%;
+    left:66.878787878788%;
 }
 
 .key.As {
-	left:81.030303030303%;
+    left:81.030303030303%;
 }
