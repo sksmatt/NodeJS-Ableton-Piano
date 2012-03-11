@@ -3,6 +3,10 @@
 Simple Keyboard to control Ableton Live ( or any other Host ) via the browser
 in real time using Node.JS, Express, Socket.IO and MIDI.
 
+http://vimeo.com/38314920  
+http://vimeo.com/38315870  
+http://vimeo.com/38274225  
+
 ## How to Install
     
     git clone git://github.com/sksmatt/nodejs-ableton-piano.git
