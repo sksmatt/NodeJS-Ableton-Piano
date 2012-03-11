@@ -126,8 +126,6 @@
             var octave = this.octave;
             if ( octave === 0 ) {
                 return note;
-            } else if ( octave < 0 ) {
-                return ~~note + ( 12 * octave );
             } else {
                 return ~~note + ( 12 * octave );
             }
